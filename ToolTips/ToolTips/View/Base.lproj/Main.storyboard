@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Mrv-iq-9UD">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Menu View Controller-->
+        <scene sceneID="T2E-rA-Kk1">
+            <objects>
+                <viewController id="Mrv-iq-9UD" customClass="MenuViewController" customModule="ToolTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tOZ-RU-RRu">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TG7-mk-rBp">
+                                <rect key="frame" x="20" y="136" width="374" height="258"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Tgd-PJ-MuP">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Material" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="44Y-6V-86x">
+                                                <rect key="frame" x="0.0" y="0.0" width="122.5" height="42"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depth of Cut (mm)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="58a-BW-fbR" userLabel="Depth of Cut">
+                                                <rect key="frame" x="125.5" y="0.0" width="123" height="42"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="17"/>
+                                                <color key="textColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Rate (mm/rev)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l8x-3i-RzZ" userLabel="Feed Rate">
+                                                <rect key="frame" x="251.5" y="0.0" width="122.5" height="42"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="16"/>
+                                                <color key="textColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <pickerView autoresizesSubviews="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywD-6j-g8k">
+                                        <rect key="frame" x="0.0" y="42" width="374" height="216"/>
+                                    </pickerView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Configuration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jzm-Ol-lXM">
+                                <rect key="frame" x="71.5" y="64" width="271.5" height="37"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                <color key="textColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1tR-v0-Vq6" userLabel="Confirm">
+                                <rect key="frame" x="115.5" y="768" width="183" height="39"/>
+                                <color key="tintColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Confirm Selection">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="confirmWasPressed:" destination="Mrv-iq-9UD" eventType="touchUpInside" id="Z05-yc-dgR"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="Cab-tb-ame">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gxm-jX-TeN"/>
+                        <color key="backgroundColor" red="0.3294117647" green="0.72941176470000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cab-tb-ame" firstAttribute="centerY" secondItem="tOZ-RU-RRu" secondAttribute="centerY" id="23i-iF-qAQ"/>
+                            <constraint firstItem="Jzm-Ol-lXM" firstAttribute="top" secondItem="Gxm-jX-TeN" secondAttribute="top" constant="20" id="6pP-yd-5L9"/>
+                            <constraint firstItem="TG7-mk-rBp" firstAttribute="top" secondItem="Jzm-Ol-lXM" secondAttribute="bottom" constant="35" id="6wq-ub-2ZW"/>
+                            <constraint firstItem="Gxm-jX-TeN" firstAttribute="trailing" secondItem="TG7-mk-rBp" secondAttribute="trailing" constant="20" id="8gj-JV-xLm"/>
+                            <constraint firstItem="TG7-mk-rBp" firstAttribute="leading" secondItem="Gxm-jX-TeN" secondAttribute="leading" constant="20" id="KHg-tD-jRP"/>
+                            <constraint firstItem="Gxm-jX-TeN" firstAttribute="bottom" secondItem="1tR-v0-Vq6" secondAttribute="bottom" constant="55" id="Npm-xX-T4j"/>
+                            <constraint firstItem="1tR-v0-Vq6" firstAttribute="centerX" secondItem="tOZ-RU-RRu" secondAttribute="centerX" id="U3P-wr-reb"/>
+                            <constraint firstItem="TG7-mk-rBp" firstAttribute="centerX" secondItem="tOZ-RU-RRu" secondAttribute="centerX" id="VAo-Qe-ic2"/>
+                            <constraint firstItem="Cab-tb-ame" firstAttribute="centerX" secondItem="tOZ-RU-RRu" secondAttribute="centerX" id="pfs-fc-pWS"/>
+                            <constraint firstItem="Jzm-Ol-lXM" firstAttribute="centerX" secondItem="tOZ-RU-RRu" secondAttribute="centerX" id="tWQ-Gk-nrG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="configPicker" destination="ywD-6j-g8k" id="ldZ-eL-hHc"/>
+                        <outlet property="loadingDataIndicator" destination="Cab-tb-ame" id="Rza-LY-Y6S"/>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="goToToolState" id="ddo-f8-Ha8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kXe-Lw-iTV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1020.2898550724639" y="77.678571428571431"/>
+        </scene>
+        <!--Tool State View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ToolStateViewController" customModule="ToolTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oFK-kM-U7Y">
+                                <rect key="frame" x="188.5" y="402.5" width="37" height="37"/>
+                                <color key="color" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </activityIndicatorView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="LWv-jF-sx9">
+                                <rect key="frame" x="0.0" y="84" width="414" height="572"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Machine Number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="PLA-UV-6Qu">
+                                        <rect key="frame" x="92.5" y="0.0" width="229.5" height="37"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="30"/>
+                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mdt-JW-8I8" userLabel="Selected Parameter Stack">
+                                        <rect key="frame" x="30" y="69" width="354" height="137.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Selected Parameters:" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="DB0-HT-y3l" userLabel="Selected Parameter Title">
+                                                <rect key="frame" x="0.0" y="0.0" width="204.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Material: xxx" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="QCa-hr-phY" userLabel="Material Label">
+                                                <rect key="frame" x="0.0" y="40" width="102" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Depth of Cut: xxx" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nGx-bA-MUc" userLabel="Depth Label">
+                                                <rect key="frame" x="0.0" y="77.5" width="140" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Feed Rate: xxx" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="1sj-Wp-SIS" userLabel="Feed Label">
+                                                <rect key="frame" x="0.0" y="115" width="122.5" height="22.5"/>
+                                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                                <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="yyK-Xy-hLa">
+                                        <rect key="frame" x="15" y="238.5" width="384" height="154"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="kXQ-k7-IZQ" userLabel="Status Stack">
+                                                <rect key="frame" x="25" y="0.0" width="334" height="25"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wear Amount:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="api-FR-TS9" userLabel="Status Label">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="25"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx.xx mm" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="v67-hv-FzN" userLabel="Status Label">
+                                                        <rect key="frame" x="177" y="0.0" width="157" height="25"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="UE3-bx-OFF" userLabel="Lifetime Stack View">
+                                                <rect key="frame" x="25" y="40" width="334" height="49.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lifetime Remaining:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jz3-1h-DVC" userLabel="Lifetime Remaining">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="49.5"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xxx days" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="uQ0-de-pBN" userLabel="Lifetime Remaining">
+                                                        <rect key="frame" x="177" y="12.5" width="157" height="25"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rJl-wd-6Vn" userLabel="Durability Stack View">
+                                                <rect key="frame" x="25" y="104.5" width="334" height="49.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Durability Remaining:" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6Sz-F0-lMc" userLabel="Percentage">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="49.5"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="xx.x%" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="9TD-PE-fqi" userLabel="Percentage">
+                                                        <rect key="frame" x="177" y="12.5" width="157" height="25"/>
+                                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="rJl-wd-6Vn" firstAttribute="leading" secondItem="yyK-Xy-hLa" secondAttribute="leading" constant="25" id="BRP-Dh-a9b"/>
+                                            <constraint firstItem="kXQ-k7-IZQ" firstAttribute="leading" secondItem="yyK-Xy-hLa" secondAttribute="leading" constant="25" id="Ogl-Ed-N4E"/>
+                                            <constraint firstItem="UE3-bx-OFF" firstAttribute="leading" secondItem="yyK-Xy-hLa" secondAttribute="leading" constant="25" id="xbb-I7-lWS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wl5-Yl-QnW">
+                                        <rect key="frame" x="40" y="424.5" width="334" height="8"/>
+                                        <subviews>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Uc-9u-dAI">
+                                                <rect key="frame" x="0.0" y="0.0" width="334" height="4"/>
+                                                <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.3294117647" green="0.72941176470000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="60e-16-6Sq">
+                                                <rect key="frame" x="0.0" y="4" width="334" height="4"/>
+                                                <color key="backgroundColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.3294117647" green="0.72941176470000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </progressView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="4Uc-9u-dAI" firstAttribute="leading" secondItem="Wl5-Yl-QnW" secondAttribute="leading" id="4AH-yJ-48K"/>
+                                            <constraint firstAttribute="trailing" secondItem="4Uc-9u-dAI" secondAttribute="trailing" id="BFE-du-aGM"/>
+                                            <constraint firstAttribute="trailing" secondItem="60e-16-6Sq" secondAttribute="trailing" id="Q6N-8N-CEq"/>
+                                            <constraint firstItem="60e-16-6Sq" firstAttribute="leading" secondItem="Wl5-Yl-QnW" secondAttribute="leading" id="kpK-Dc-TYp"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="NXL-qa-GkR">
+                                        <rect key="frame" x="88.5" y="464.5" width="237" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tmz-Vr-AzG">
+                                                <rect key="frame" x="0.0" y="0.0" width="98.5" height="31"/>
+                                                <color key="tintColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Refresh">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.80784313730000001" green="0.6705882353" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="refreshWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PWC-YU-idg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPU-SR-xGj">
+                                                <rect key="frame" x="138.5" y="0.0" width="98.5" height="31"/>
+                                                <color key="tintColor" red="0.98431372549999996" green="0.97254901959999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="View Graph">
+                                                    <backgroundConfiguration key="background">
+                                                        <color key="backgroundColor" red="0.3294117647" green="0.72941176470000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </backgroundConfiguration>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="viewGraphsWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aeY-7F-7my"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Warning: Tool has been worn out! Replacement is overdue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="6V1-Zp-XTm" userLabel="Feed Label">
+                                        <rect key="frame" x="20" y="527.5" width="374" height="44.5"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                        <color key="textColor" systemColor="systemPinkColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="6V1-Zp-XTm" firstAttribute="leading" secondItem="LWv-jF-sx9" secondAttribute="leading" constant="20" id="EGd-hT-Ddw"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wl5-Yl-QnW" secondAttribute="trailing" constant="40" id="EX5-Co-9xm"/>
+                                    <constraint firstItem="mdt-JW-8I8" firstAttribute="leading" secondItem="LWv-jF-sx9" secondAttribute="leading" constant="30" id="JMz-NJ-bTD"/>
+                                    <constraint firstAttribute="trailing" secondItem="6V1-Zp-XTm" secondAttribute="trailing" constant="20" id="JlK-7f-W7X"/>
+                                    <constraint firstItem="yyK-Xy-hLa" firstAttribute="leading" secondItem="LWv-jF-sx9" secondAttribute="leading" constant="15" id="b7C-DF-4dU"/>
+                                    <constraint firstItem="Wl5-Yl-QnW" firstAttribute="leading" secondItem="LWv-jF-sx9" secondAttribute="leading" constant="40" id="xlY-fJ-21r"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="oFK-kM-U7Y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Jfq-bF-g5v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LWv-jF-sx9" secondAttribute="trailing" id="OgX-Dt-FaS"/>
+                            <constraint firstItem="oFK-kM-U7Y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UQq-Ki-hCZ"/>
+                            <constraint firstItem="LWv-jF-sx9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="V03-yH-s59"/>
+                            <constraint firstItem="LWv-jF-sx9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Xla-PM-QJn"/>
+                            <constraint firstItem="LWv-jF-sx9" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="lF5-Vt-OpA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ckt-y1-JnP"/>
+                    <connections>
+                        <outlet property="depthLabel" destination="nGx-bA-MUc" id="Ezr-gq-ELS"/>
+                        <outlet property="feedLabel" destination="1sj-Wp-SIS" id="Uru-iT-mxs"/>
+                        <outlet property="lifetimeLabel" destination="uQ0-de-pBN" id="wsp-94-DeC"/>
+                        <outlet property="machineNumberLabel" destination="PLA-UV-6Qu" id="CyX-oc-o34"/>
+                        <outlet property="materialLabel" destination="QCa-hr-phY" id="v6K-LX-JTy"/>
+                        <outlet property="percentageLabel" destination="9TD-PE-fqi" id="29g-bs-bxO"/>
+                        <outlet property="refreshLoadWheel" destination="oFK-kM-U7Y" id="GAN-1D-W6d"/>
+                        <outlet property="statusLabel" destination="v67-hv-FzN" id="T45-l2-qgn"/>
+                        <outlet property="toolStateProgress" destination="60e-16-6Sq" id="5db-N2-GVM"/>
+                        <outlet property="toolStateProgress2" destination="4Uc-9u-dAI" id="3KN-eK-3kC"/>
+                        <outlet property="warningLabel" destination="6V1-Zp-XTm" id="SFq-hW-DSg"/>
+                        <segue destination="lDb-Y6-RsW" kind="presentation" identifier="goToGraphs" id="gaG-ES-aLk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="77.678571428571431"/>
+        </scene>
+        <!--Graph View Controller-->
+        <scene sceneID="Tmc-rH-na6">
+            <objects>
+                <viewController id="lDb-Y6-RsW" customClass="GraphViewController" customModule="ToolTips" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kIv-yo-Y0r">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="jk4-IP-VKf">
+                                <rect key="frame" x="10" y="84" width="394" height="698"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tool Wear (mm) Over Time (s)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="4Qz-Zp-hnX">
+                                        <rect key="frame" x="27" y="0.0" width="340.5" height="31"/>
+                                        <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="25"/>
+                                        <color key="textColor" red="0.67843137249999996" green="0.5450980392" blue="0.45098039220000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IrX-2J-BG2" customClass="LineChartView" customModule="Charts">
+                                        <rect key="frame" x="5" y="81" width="384" height="617"/>
+                                        <color key="backgroundColor" red="0.3294117647" green="0.72941176470000002" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="IrX-2J-BG2" secondAttribute="trailing" constant="5" id="AWh-O2-TM0"/>
+                                    <constraint firstItem="IrX-2J-BG2" firstAttribute="leading" secondItem="jk4-IP-VKf" secondAttribute="leading" constant="5" id="Jsr-2D-bOJ"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="wcM-KL-g90"/>
+                        <color key="backgroundColor" red="1" green="0.98431372549999996" blue="0.91372549020000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jk4-IP-VKf" firstAttribute="centerX" secondItem="kIv-yo-Y0r" secondAttribute="centerX" id="QQc-Sh-0XH"/>
+                            <constraint firstItem="jk4-IP-VKf" firstAttribute="leading" secondItem="wcM-KL-g90" secondAttribute="leading" constant="10" id="iJ7-mg-yml"/>
+                            <constraint firstItem="jk4-IP-VKf" firstAttribute="top" secondItem="wcM-KL-g90" secondAttribute="top" constant="40" id="jLN-3K-F7c"/>
+                            <constraint firstItem="wcM-KL-g90" firstAttribute="bottom" secondItem="jk4-IP-VKf" secondAttribute="bottom" constant="60" id="xeU-2W-Juf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="IrX-2J-BG2" id="dCs-X8-xnW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Il-tW-kyP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="78"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

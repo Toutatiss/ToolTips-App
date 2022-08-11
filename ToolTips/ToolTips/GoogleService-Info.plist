@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>742120569816-rbel6khebt63vr51bdhjfkbu7ck5m8bp.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.742120569816-rbel6khebt63vr51bdhjfkbu7ck5m8bp</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAds56ULiB4CQ0_TliuTueLMMxP9JN9OBY</string>
+	<key>GCM_SENDER_ID</key>
+	<string>742120569816</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.wordpress.jankoclock.ToolTips</string>
+	<key>PROJECT_ID</key>
+	<string>tooltips-afece</string>
+	<key>STORAGE_BUCKET</key>
+	<string>tooltips-afece.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:742120569816:ios:2cc23e598ce6479b4a90ad</string>
+</dict>
+</plist>
